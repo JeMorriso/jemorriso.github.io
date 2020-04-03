@@ -1,0 +1,6 @@
+<nav>
+  <!-- this is available via Jekyll from _data/navigation.yml -->
+  {% for item in site.data.navigation %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+</nav>

@@ -1,2 +1,14 @@
+url: "http://jeremymorrison.ca/"
 title: Welcome to Jeremy Morrison's homepage!
 description: This website is currently under construction
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# specify front matter defaults to avoid duplicating on each page
+defaults:
+  - scope: 
+      path: ""
+    values:
+      layout: "default"
+
